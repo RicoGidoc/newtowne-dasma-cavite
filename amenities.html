@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newtowne Dasmariñas Amenities</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="realty.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* FLOAT BUTTON */
+        .home-float {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-float:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #34d058, #28a745);
+        }
+
+        /* MAIN CONTAINER */
+        .amenities-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+
+        /* TITLE */
+        .amenities-container h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+
+        /* DESCRIPTION */
+        .amenities-description {
+            max-width: 850px;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* GRID */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .amenity-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: 0.4s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* IMAGE */
+        .amenity-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        /* CONTENT */
+        .amenity-content {
+            padding: 20px;
+        }
+
+        .amenity-content h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .amenity-content p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-section h2 {
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+
+        .contact-section p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            .amenities-container h1 {
+                font-size: 28px;
+            }
+
+            .amenities-description {
+                font-size: 15px;
+            }
+
+            .amenity-card img {
+                height: 180px;
+            }
+
+
+             /* FIXED FLOAT BUTTON ALIGNMENT */
+.home-float {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+
+    z-index: 1000;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+    <a href="bdlgfacade.html" class="home-float">🏠 Back to Home</a>
+
+
+    <!-- MAIN SECTION -->
+    <div class="amenities-container">
+
+        <h1>✨ AMENITIES – NEWTOWNE DASMARIÑAS</h1>
+
+        <p class="amenities-description">
+            Experience comfortable and modern condominium living at
+            <strong>Newtowne Dasmariñas, Cavite</strong> 🏢🌆.
+            Enjoy lifestyle-focused amenities designed for relaxation,
+            recreation, wellness, and convenience for you and your family 💖.
+        </p>
+
+        <!-- AMENITIES GRID -->
+        <div class="amenities-grid">
+
+            <!-- CARD 1 -->
+            <div class="amenity-card">
+                <img src="amenities/pool.png" alt="Swimming Pool">
+
+                <div class="amenity-content">
+                    <h3>🏊 Swimming Pool</h3>
+
+                    <p>
+                        Relax and unwind in the modern swimming pool area
+                        perfect for leisure and family bonding.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="amenity-card">
+                <img src="amenities/gym.png" alt="Fitness Gym">
+
+                <div class="amenity-content">
+                    <h3>💪 Fitness Gym</h3>
+
+                    <p>
+                        Stay active and healthy with a convenient
+                        fitness gym within the community.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="amenity-card">
+                <img src="amenities/playground.png" alt="Playground">
+
+                <div class="amenity-content">
+                    <h3>🛝 Children's Playground</h3>
+
+                    <p>
+                        Safe and enjoyable outdoor spaces designed
+                        for kids and family activities.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="amenity-card">
+                <img src="amenities/lounge.png" alt="Lounge Area">
+
+                <div class="amenity-content">
+                    <h3>☕ Lounge Area</h3>
+
+                    <p>
+                        A stylish and relaxing lounge space for residents,
+                        guests, and casual gatherings.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="amenity-card">
+                <img src="amenities/linearpark.png" alt="Garden Area">
+
+                <div class="amenity-content">
+                    <h3>🌿 Garden & Open Space</h3>
+
+                    <p>
+                        Enjoy fresh air and peaceful surroundings with
+                        landscaped gardens and open areas.
+                    </p>
+                </div>
+            </div>
+            <!-- ================================ -->
+            <div class="amenity-card">
+                <img src="amenities/basketball.png" alt="Garden Area">
+            
+                <div class="amenity-content">
+                    <h3>🏀 Basketball Court</h3>
+            
+                    <p>
+                        🏀 Enjoy fun and active living with a modern basketball court — perfect for bonding, fitness, 
+                        and friendly games with  family and friends.
+                    </p>
+                </div>
+            </div>
+<div class="amenity-card">
+    <img src="amenities/jogging.png" alt="Garden Area">
+
+    <div class="amenity-content">
+        <h3>🏃 Jogging Path</h3>
+
+        <p>
+        🏃 Enjoy a refreshing lifestyle with a peaceful jogging path — perfect for morning walks, exercise, and staying active
+        every day.
+        </p>
+    </div>
+</div>
+<div class="amenity-card">
+    <img src="amenities/functionroom.png" alt="Garden Area">
+
+    <div class="amenity-content">
+        <h3>🎉</h3>Function Room</h3>
+
+        <p>
+            🎉 Enjoy memorable gatherings in a stylish function room — perfect for celebrations, meetings, and special occasions
+            with family and friends.
+        </p>
+    </div>
+</div>
+<div class="amenity-card">
+    <img src="amenities/park.png" alt="Garden Area">
+
+    <div class="amenity-content">
+        <h3>🌿Linear Park</h3>
+
+        <p>
+            🌳 Enjoy relaxing outdoor moments at the linear park — a perfect space for leisure walks, family bonding, and enjoying
+            nature every day.
+        </p>
+    </div>
+</div>
+
+<div class="amenity-card">
+    <img src="amenities/roofdeck.png" alt="Garden Area">
+
+    <div class="amenity-content">
+        <h3>🌿Roofdeck</h3>
+
+        <p>
+            🌆 Enjoy breathtaking city views and relaxing moments at the roofdeck — perfect for unwinding, socializing, and enjoying
+            fresh air above the city.
+        </p>
+    </div>
+</div>
+
+<div class="amenity-card">
+    <img src="amenities/workingspace.png" alt="Garden Area">
+
+    <div class="amenity-content">
+        <h3>📚Working Space</h3>
+
+        <p>
+            💻 Enjoy productivity and comfort in a modern working space — perfect for remote work, studying, meetings, and everyday
+            focus.
+        </p>
+    </div>
+</div>
+
+            <!-- CARD 6 -->
+            <div class="amenity-card">
+                <img src="amenities/21.png" alt="Security">
+
+                <div class="amenity-content">
+                    <h3>🛡️ 24/7 Security</h3>
+
+                    <p>
+                        Secure and peaceful condominium living with
+                        round-the-clock security and monitoring.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact-section">
+
+            <h2>📞 Contact Your Trusted Property Consultant</h2>
+
+            <p>
+                🏡 <strong>Rico G. Gidoc</strong><br>
+                📱 WhatsApp / Smart: 0939-120-9602<br>
+                📧 gidocrealty@gmail.com<br>
+                📘 Facebook Page: RicoHomes.ph
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

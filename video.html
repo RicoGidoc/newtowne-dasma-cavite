@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Videos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        /* ================= PROPERTY SECTION ================= */
+        .property-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-box {
+            margin-bottom: 30px;
+        }
+
+        .video-box h3 {
+            margin-bottom: 10px;
+            color: #0b5d3b;
+        }
+
+        /* VIDEO STYLE */
+        iframe,
+        video {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: none;
+        }
+
+        /* DETAILS */
+        .property-details {
+            margin-top: 20px;
+        }
+
+        .property-details h2 {
+            margin-top: 0;
+            color: #0b5d3b;
+        }
+
+        .inquire-btn {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px 15px;
+            background: green;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .inquire-btn:hover {
+            background: darkgreen;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            iframe,
+            video {
+                height: 220px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="property-container">
+
+        <!-- YOUTUBE VIDEO -->
+        <div class="video-box">
+            <h3>🎥🛜 PASEO VERDE CONDOMINIUM – C5 LAS PIÑAS 💖</h3>
+
+            <iframe src="https://www.youtube.com/embed/4vouIfg9ncI" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- LOCAL VIDEO -->
+        <div class="video-box">
+            <h3>🎥COMBINED UNIT 💖</h3>
+
+            <video controls>
+                <source src="newtowne/combine unit video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- LOCAL VIDEO -->
+        <div class="video-box">
+            <h3>🎥🛜 STUDIO UNIT💖</h3>
+
+            <video controls>
+                <source src="newtowne/studio video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="property-details">
+            <h2>🏡🎥 HOUSING VIDEOS</h2>
+
+            <p>🎥 Explore our model house and condominium video tours.</p>
+
+            <a href="contact.html" class="inquire-btn">📩☎️ Inquire Now</a>
+
+            <a href="index.html" class="inquire-btn">🔙 Back</a>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT: AUTO PAUSE OTHER VIDEOS -->
+    <script>
+        const videos = document.querySelectorAll("video");
+
+        videos.forEach(video => {
+            video.addEventListener("play", () => {
+
+                videos.forEach(v => {
+                    if (v !== video) {
+                        v.pause();
+                    }
+                });
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

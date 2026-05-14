@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtowne Computation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+        }
+
+        /* Back Button */
+        .home-btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            background: green;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        /* Image */
+        .main-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            height: 70px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Text */
+        h1 {
+            margin-top: 10px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Back Button -->
+        <a href="index.html" class="home-btn">🏠 Back to home page</a>
+        <a href="offering.html" class="home-btn">🏠 Unit Offering</a>
+
+        <h1>NEWTOWNE DASMA COMPUTATION🏡</h1>
+        <h2>📢 PRE-SELLING HOT PROMO! 🔥🏡💰</h2>
+        <h3>📢 LIMITED OFFER! 🎯 WITH EASY PAYMENT DOWNPAYMENT💰</h3>
+
+        <!-- Main Image -->
+        <img src="newtowne/tower1.png" class="main-img" id="mainImage">
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <img src="computation/1brwithbalcony.png" onclick="changeImage(this)">
+            <img src="computation/studio.png" onclick="changeImage(this)">
+            <img src="computation/studio pag-ibig loan.png" onclick="changeImage(this)">
+        </div>
+
+        <h3>📍UNIVERSITY CAPITAL OF THE CITY ANABU ROAD, BRGY BUROL, DASMARIÑAS, CAVITE </h3>
+        
+
+    <section class="hero">
+        <div class="overlay">
+    
+            <h1>🏡✨ NEWTOWNE DASMA – DASMA CAVITE ✨🏡</h1>
+    
+            <p class="subtitle">
+                📍 Unit 2 – 2 Storey Townhouse <br>
+                💎 Modern • Spacious • Affordable Living
+            </p>
+    
+            <div class="card">
+                <h2>📐 STUDIO UNIT COMPUTATION (SEE ATTACHED FILES OTHER UNIT COMPUTATION) </h2>
+                <p>▫ Floor Area: <strong>22SQM</strong></p>
+            </div>
+    
+            <div class="card">
+                <h2>💰 TOTAL SELLING PRICE</h2>
+                <p class="price">Php 3,613,059.14 (Legal & misc fees included)</p>
+            </div>
+    
+            <div class="card">
+                <h2>📑EQUITY DOWN PAYMENT</h2>
+                <p class="price">PhP 632,285.35 (17.5%)</p>
+            </div>
+            <div class="card">
+                <h2>📑RESERVATION</h2>
+                <p class="price">Php 20,000.00</p>
+            </div>
+    
+            <div class="card">
+                <h2>🏦 DOWNPAYMENT (TERMS)</h2>
+                <p>▫ Php 11,132.46 - 11 months</p>
+                <p>▫ Php 21,429.99 - 10 months</p>                
+            </div>
+    
+            <div class="card">
+                <h2>🏦 BANK FINANCING (82.5%)</h2>
+                <p class="price">Php 2,980,773.79</p>
+            </div>
+    
+            <div class="card">
+                <h2>📊 ESTIMATED MONTHLY AMORTIZATION</h2>
+                <p>▫ 5 Years  – Php 60,439.34/month</p>
+                <p>▫ 10 Years – Php 36,165.o1/month</p>
+                <p>▫ 15 Years – Php  28,485.83/month</p>
+                <p>▫ 20 Years – Php 24,932.39/month</p>
+            </div>
+    
+            <div class="features">
+                <p>✅ 8% interest rate</p>
+                <p>✅ Bank & Pag-ibig financing available</p>
+            </div>
+    
+            <a href="contact.html" class="btn">
+                📩 Message now for site viewing & reservation!
+            </a>
+    
+        </div>
+    </section>
+
+        <h3>📞📩 Get in Touch with Your Property Consultant</h3>
+        <p>0917 6979 508 | 0939 1209 602</p>
+        <p>email:rgg252010@yahoo.com</p>
+
+    </div>
+
+    <!-- JS for Image Click -->
+    <script>
+        function changeImage(img) {
+            document.getElementById("mainImage").src = img.src;
+        }
+    </script>
+
+</body>
+
+</html>

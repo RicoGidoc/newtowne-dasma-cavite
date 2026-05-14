@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Newtowne Dasmariñas Cavite</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('images/newtowne.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .section-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #0d3b66;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-section {
+            padding: 70px 0;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .feature-box h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #198754;
+        }
+
+        .location-section {
+            background: #0d3b66;
+            color: white;
+            padding: 70px 0;
+        }
+
+        .location-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #111;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background: #198754;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background: #146c43;
+            color: white;
+        }
+
+        @media(max-width:768px) {
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <h1>Newtowne Dasmariñas</h1>
+            <p>
+                A Modern Master-Planned Community in Dasmariñas, Cavite
+            </p>
+
+            <a href="index.html" class="btn-custom">
+                Explore Properties
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+        <div class="container">
+
+            <h2 class="section-title">
+                About Newtowne Dasmariñas
+            </h2>
+
+            <div class="row align-items-center mt-5">
+
+                <div class="col-lg-6 mb-4">
+                    <img src="./bldg  facade/2.png" alt="Newtowne Dasmariñas" class="about-img" />
+                </div>
+
+                <div class="col-lg-6">
+
+                    <p>
+                        Newtowne Dasmariñas is a growing master-planned community located
+                        in Dasmariñas, Cavite. Designed for modern families, professionals,
+                        and investors, the community offers accessibility, convenience,
+                        security, and a peaceful environment.
+                    </p>
+
+                    <p>
+                        Strategically located near major roads and highways, residents
+                        enjoy easy access to schools, hospitals, malls, transport hubs,
+                        business districts, and commercial establishments.
+                    </p>
+
+                    <p>
+                        Newtowne combines urban convenience with suburban comfort,
+                        making it an ideal place to live, invest, and build your future.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="about-section bg-light">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Key Features
+            </h2>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🛡️</div>
+                        <h5>Safe & Secure</h5>
+                        <p>
+                            Gated community with 24/7 security and peaceful surroundings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">📍</div>
+                        <h5>Prime Location</h5>
+                        <p>
+                            Accessible via major roads, CALAX, and Aguinaldo Highway.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🏡</div>
+                        <h5>Modern Living</h5>
+                        <p>
+                            Well-designed homes perfect for families and professionals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🛍️</div>
+                        <h5>Near Commercial Areas</h5>
+                        <p>
+                            Close to malls, supermarkets, restaurants, and markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🎓</div>
+                        <h5>Near Universities</h5>
+                        <p>
+                            Accessible to De La Salle University and other schools nearby.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🌳</div>
+                        <h5>Relaxing Environment</h5>
+                        <p>
+                            Wide roads, green spaces, and a refreshing community atmosphere.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEARBY PLACES -->
+    <section class="location-section">
+
+        <div class="container">
+
+            <h2 class="section-title text-white">
+                Nearby Establishments
+            </h2>
+
+            <div class="row mt-5">
+
+                <div class="col-md-4">
+                    <div class="location-box">
+                        <h5>🛒 Shopping Malls</h5>
+                        <p>
+                            SM City Dasmariñas<br>
+                            Robinsons Place Dasmariñas<br>
+                            Vista Mall Dasmariñas
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="location-box">
+                        <h5>🎓 Universities</h5>
+                        <p>
+                            De La Salle University Dasmariñas<br>
+                            National University Dasmariñas<br>
+                            Emilio Aguinaldo College
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="location-box">
+                        <h5>🚗 Accessibility</h5>
+                        <p>
+                            Near Aguinaldo Highway<br>
+                            Accessible to CALAX<br>
+                            Easy transport options nearby
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY INVEST -->
+    <section class="about-section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Why Invest in Newtowne?
+            </h2>
+
+            <div class="row align-items-center mt-5">
+
+                <div class="col-lg-6 mb-4">
+
+                    <p>
+                        Newtowne Dasmariñas offers strong investment potential due to
+                        its strategic location and continuous development in Cavite.
+                    </p>
+
+                    <p>
+                        With growing infrastructure projects, nearby commercial hubs,
+                        and increasing demand for quality homes, the community is ideal
+                        for both homeowners and property investors.
+                    </p>
+
+                    <a href="contact.html" class="btn-custom">
+                        Inquire Now
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="newtowne/1.jpg" alt="Investment" class="about-img" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p class="mb-2">
+                © 2026 Newtowne Dasmariñas Cavite
+            </p>
+
+            <p>
+            Website Designed & Developed by Rico Gidoc | IT & Property Consultant – Earthwing Realty
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
