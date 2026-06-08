@@ -373,6 +373,7 @@ if(mainImg){
     document.querySelectorAll('.img-box img').forEach(img => {
         img.addEventListener('click', () => {
             mainImg.src = img.src;
+            mainImg.alt = img.alt;
         });
     });
 }
